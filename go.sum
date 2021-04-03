@@ -1,0 +1,6 @@
+github.com/mrjones/oauth v0.0.0-20180629183705-f4e24b6d100c h1:3wkDRdxK92dF+c1ke2dtj7ZzemFWBHB9plnJOtlwdFA=
+github.com/mrjones/oauth v0.0.0-20180629183705-f4e24b6d100c/go.mod h1:skjdDftzkFALcuGzYSklqYd8gvat6F1gZJ4YPVbkZpM=
+github.com/pkg/errors v0.8.0 h1:WdK/asTD0HN+q6hsWO3/vpuAkAr+tw6aNJNDFFf0+qw=
+github.com/pkg/errors v0.8.0/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
+github.com/timehop/golog v0.0.0-20150415170914-f7b5bd986a77 h1:2M6lqq9qv/tc9ogIZOAsfkzJ83AFne6M72wAdvqS0uM=
+github.com/timehop/golog v0.0.0-20150415170914-f7b5bd986a77/go.mod h1:5snQTM41D/oFFJvpy4wLBsYt9HgGJ8bL8F8dgmtt13E=

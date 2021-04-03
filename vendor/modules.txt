@@ -1,0 +1,9 @@
+# github.com/mrjones/oauth v0.0.0-20180629183705-f4e24b6d100c
+## explicit
+github.com/mrjones/oauth
+# github.com/pkg/errors v0.8.0
+## explicit
+github.com/pkg/errors
+# github.com/timehop/golog v0.0.0-20150415170914-f7b5bd986a77
+## explicit
+github.com/timehop/golog/log

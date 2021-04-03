@@ -35,11 +35,10 @@ var (
 )
 
 const (
-	version          = "2.0.0"
+	version          = "3.0.0"
 	requestTokenURL  = "https://sso.openx.com/api/index/initiate"
 	accessTokenURL   = "https://sso.openx.com/api/index/token"
 	authorizationURL = "https://sso.openx.com/login/process"
-	apiPath          = "/data/1.0/"
 	callBack         = "oob"
 	logKey           = "Openx-Package"
 )
@@ -86,7 +85,6 @@ type Client struct {
 	consumerSecrect string
 	email           string
 	password        string
-	apiPath         string
 	session         *http.Client
 }
 
@@ -102,7 +100,6 @@ func NewClient(creds Credentials, debug bool) (*Client, error) {
 		realm:           creds.Realm,
 		consumerKey:     creds.ConsumerKey,
 		consumerSecrect: creds.ConsumerSecrect,
-		apiPath:         apiPath,
 		email:           creds.Email,
 		password:        creds.Password,
 		scheme:          "http",
@@ -289,7 +286,7 @@ func (c *Client) formatURL(endpoint string) (string, error) {
 	}
 	p := strings.TrimLeft(rawURL.Path, "/")
 	if rawURL.Scheme == "" {
-		uri = fmt.Sprintf("%s://", c.scheme) + path.Join(c.domain, c.apiPath, p)
+		uri = fmt.Sprintf("%s://", c.scheme) + path.Join(c.domain, p)
 	}
 
 	return uri, nil
