@@ -156,10 +156,7 @@ func NewClient(creds Credentials, debug bool) (*Client, error) {
 	// create authenticated session
 	log.Trace(logKey, "creating oauth1 session")
 
-	session, err := consumer.MakeHttpClient(accessToken)
-	if err != nil {
-		return nil, errors.Wrap(err, "Couldn't create client")
-	}
+	session := &http.Client{}
 	session.Jar = cj
 	c.session = session
 	return c, nil
