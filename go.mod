@@ -1,4 +1,4 @@
-module github.com/rale/OX3-Go-API-Client
+module github.com/ggsoftwarellc/OX3-Go-API-Client
 
 go 1.14
 
